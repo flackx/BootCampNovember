@@ -1,40 +1,32 @@
-/**
- * 
- */
 package com.company.activity;
 
+import java.lang.*;
+
 /**
- * @author 
- *
+ * @author Brendons
  */
 public class MultiplicationTable {
+    public static void main(String[] args) {
+        multiplicationTable10();
+        multiplicationtable40to60();
+    }
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		
-/*
-		
-		
-		// Table from 1 to 10
-		for (int i = 1; i <= 10; i++) {
-			System.out.println("*** Table of "+i + " ***");
-			for (int j = 1; j <= 10; j++) {
-				System.out.println(i + "X" + j +" = " + i*j);
-		}
-		}
+    public static void multiplicationTable10() {
+        for (int i = 1; i <= 20; i++) {
+            System.out.println("\nTable of " + i);
+            for (int x = 1; x <= 10; x++) {
+                System.out.println(i + "*" + x + " = " + i * x);
+            }
+        }
+    }
 
-		// Table from 11 to 20
-		
-		// complete code. write for loop for int i
-			System.out.println("*** Table of "+i + " ***");
-			// complete code. write nested for loop for int j
-				System.out.println(i + "X" + j +" = " + i*j);
-		}
-		}*/
-		
-		
-	}
+    public static void multiplicationtable40to60() {
+        for (int i = 40; i <= 60; i++) {
+            System.out.println("\nTable of " + i);
+            for (int x = 1; x <= 10; x++) {
+                System.out.println(i + "*" + x + " = " + i * x);
+            }
+        }
+    }
 
 }
