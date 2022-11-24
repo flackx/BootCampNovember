@@ -15,7 +15,6 @@ public class task1 {
             for (int j = 0; j < table[i].length; j++) {
                 table[i][j] = (i + 1) * (j + 1);
             }
-
         }
         printArray(table);
     }

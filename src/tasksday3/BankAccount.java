@@ -20,7 +20,7 @@ public class BankAccount {
     public void deposit(int amount) {
         if (amount <= 5000) {
             balance += amount;
-        }else{
+        } else {
             System.out.println("You can't deposit more than 5000");
         }
     }
@@ -38,7 +38,7 @@ public class BankAccount {
             withdraw(amount);
             other.deposit(amount);
         } else {
-            System.out.println("Insufficient funds."+" amount: "+amount+" balance: "+balance);
+            System.out.println("Insufficient funds." + " amount: " + amount + " balance: " + balance);
         }
     }
 
