@@ -10,10 +10,14 @@ public class AbstractionActivity {
         rectangle.setColor("red");
         // Set the color of the circle to blue
         circle.setColor("blue");
+
+
         // Print the area and perimeter of the rectangle
         System.out.println("Area of rectangle: " + rectangle.calculateArea());
         System.out.println("Perimeter of rectangle: " + rectangle.calculatePerimeter());
         System.out.println("Color of rectangle: " + rectangle.getColor());
+
+
         // Print the area and perimeter of the circle
         System.out.println("Area of circle: " + circle.calculateArea());
         System.out.println("Perimeter of circle: " + circle.calculatePerimeter());

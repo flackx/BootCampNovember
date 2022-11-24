@@ -10,7 +10,7 @@ public class Car extends Vehicle {
 
 
     public Car() {
-        System.out.println("Car constructor");
+        System.out.println("Car made :)");
     }
 
     public Car(String name, int wheels, int doors, int engineSize, int Speed, int gears, String gearbox, int gearUsed) {
@@ -37,7 +37,11 @@ public class Car extends Vehicle {
     }
 
     public void setDoors(int doors) {
-        this.doors = doors;
+        if (doors > 0) {
+            this.doors = doors;
+        } else {
+            System.out.println("Invalid number of doors");
+        }
     }
 
     public void setEngineSize(double engineSize) {
@@ -45,7 +49,11 @@ public class Car extends Vehicle {
     }
 
     public void setSpeed(int Speed) {
-        this.Speed = Speed;
+        if (Speed > 0) {
+            this.Speed = Speed;
+        } else {
+            System.out.println("Speed cannot be negative");
+        }
     }
 
     public void setGears(int gears) {
@@ -109,7 +117,13 @@ public class Car extends Vehicle {
     }
 
     public void getGearUsed() {
-        System.out.println("Gear used: " + gearUsed);
+        if(getSpeed()>0) {
+            System.out.println(this.getName()+" is in gear " + gearUsed);
+        }
+        else{
+            System.out.println("You are not moving so probably in gear 0");
+        }
+
     }
 
     public String toString() {
